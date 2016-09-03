@@ -1,0 +1,72 @@
+{
+  "EMISSION_ALPHABET": [
+    "A",
+    "B"
+  ],
+  "TRANSITION_ALPHABET": [
+    "begin",
+    "L1",
+    "L2",
+    "L3"
+  ],
+  "begin": {
+    "FIX_EM": [],
+    "LINK": [
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "EM_LIST": [],
+    "ENDSTATE": 0,
+    "TRANS": [
+      0.30,
+      0.40,
+      0.30
+    ],
+    "FIX_TR": [],
+    "EMISSION": ["None"],
+    "LABEL": "None"
+  },
+  "L1": {
+    "FIX_EM": [],
+    "LINK": ["L1", "L2"],
+    "TRANS": [0.4, 0.6],
+    "EM_LIST": [
+      "A",
+      "B"
+    ],
+    "EMISSION": [0.7, 0.3
+    ],
+    "FIX_TR": [],
+    "LABEL": "L",
+    "ENDSTATE": 0
+  },
+  "L2": {
+    "FIX_EM": [],
+    "LINK": ["L2", "L3"],
+    "TRANS": [0.8, 0.2],
+    "EM_LIST": [
+      "A",
+      "B"
+    ],
+    "EMISSION": [0.4, 0.6
+    ],
+    "FIX_TR": [],
+    "LABEL": "L",
+    "ENDSTATE": 0
+  },
+  "L3": {
+    "FIX_EM": [],
+    "LINK": ["L3"],
+    "TRANS": [1.0],
+    "EM_LIST": [
+      "A",
+      "B"
+    ],
+    "EMISSION": [0.8, 0.2
+    ],
+    "FIX_TR": [],
+    "LABEL": "L",
+    "ENDSTATE": 1
+  }
+}
